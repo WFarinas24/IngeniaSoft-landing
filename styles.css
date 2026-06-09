@@ -449,7 +449,7 @@ h1,h2,h3,h4,h5 {
 }
 .mockup-float-1 {
   position: absolute;
-  top: -20px; right: -20px;
+  top: 16px; right: -16px;
   background: white;
   border-radius: 14px;
   padding: 12px 16px;
@@ -462,10 +462,11 @@ h1,h2,h3,h4,h5 {
   color: var(--ink);
   border: 1px solid var(--border);
   animation: float1 3s ease-in-out infinite;
+  z-index: 10;
 }
 .mockup-float-2 {
   position: absolute;
-  bottom: 30px; left: -30px;
+  bottom: 30px; left: -16px;
   background: white;
   border-radius: 14px;
   padding: 12px 16px;
@@ -478,6 +479,7 @@ h1,h2,h3,h4,h5 {
   color: var(--ink);
   border: 1px solid var(--border);
   animation: float2 3.5s ease-in-out infinite;
+  z-index: 10;
 }
 @keyframes float1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
 @keyframes float2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
